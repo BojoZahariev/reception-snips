@@ -8,9 +8,13 @@ body {
   /*
   background-color: #007dc6;
 */
-
-  background-image: url(images/duotone.jpg);
+  height: 100vh;
+  background-image: url(images/Bhblue2.jpg);
   background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  letter-spacing: 0.5px;
+  font-family: 'Lato', sans-serif;
 }
 
 /*INITIAL*/
@@ -19,10 +23,11 @@ body {
 }
 
 .title {
-  font-size: 50px;
+  font-size: 60px;
   color: #ffc220;
   padding: 20px;
   text-align: center;
+  font-weight: 700;
 }
 
 .buttons {
@@ -37,11 +42,11 @@ body {
   width: 200px;
   height: 200px;
   border-radius: 50%;
-  background-color: #65b32e;
+  background-color: #76c043;
   overflow: hidden;
   line-height: 200px;
   text-align: center;
-  color: #222;
+  color: #fff;
   cursor: pointer;
   user-select: none;
   box-shadow: 0px 2px 2px #0000004a;
@@ -63,6 +68,13 @@ body {
   position: absolute;
   bottom: 0;
   right: 0;
+}
+
+#backBtn {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  cursor: pointer;
 }
 
 #colleagues {
