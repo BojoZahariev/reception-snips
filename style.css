@@ -1,0 +1,87 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  /*
+  background-color: #007dc6;
+*/
+
+  background-image: url(images/duotone.jpg);
+  background-size: cover;
+}
+
+/*INITIAL*/
+.initial {
+  position: relative;
+}
+
+.title {
+  font-size: 50px;
+  color: #ffc220;
+  padding: 20px;
+  text-align: center;
+}
+
+.buttons {
+  margin-top: 30vh;
+  text-align: center;
+}
+
+#colleaguesBtn,
+#visitorsBtn {
+  display: inline-block;
+  margin: 0px 50px;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  background-color: #65b32e;
+  overflow: hidden;
+  line-height: 200px;
+  text-align: center;
+  color: #222;
+  cursor: pointer;
+  user-select: none;
+  box-shadow: 0px 2px 2px #0000004a;
+  border: 1px solid #45632f;
+  border-bottom: solid 3px #45632f;
+}
+
+#colleaguesBtn:active,
+#visitorsBtn:active {
+  -ms-transform: translateY(3px);
+  -webkit-transform: translateY(3px);
+  transform: translateY(3px);
+  box-shadow: 0 0 1px #00000026;
+  border-bottom: none;
+}
+
+#logo {
+  width: 400px;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+#colleagues {
+  display: none;
+}
+
+#visitors {
+  display: none;
+}
+
+.names {
+  display: inline;
+  padding: 10px;
+}
+
+#colleaguesListDiv {
+  display: none;
+}
+
+#visitorsListDiv {
+  display: none;
+}
