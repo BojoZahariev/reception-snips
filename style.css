@@ -5,9 +5,8 @@
 }
 
 body {
-  /*
   background-color: #007dc6;
-*/
+
   height: 100vh;
   background-image: url(images/Bhblue2.jpg);
   background-size: cover;
@@ -25,9 +24,10 @@ body {
 .title {
   font-size: 60px;
   color: #ffc220;
-  padding: 20px;
+  padding: 50px;
   text-align: center;
   font-weight: 700;
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
 }
 
 .buttons {

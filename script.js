@@ -7,6 +7,8 @@ const visitorsBtn = document.querySelector('#visitorsBtn');
 colleaguesBtn.addEventListener('click', function(e) {
   initialDiv.style.display = 'none';
   colleaguesDiv.style.display = 'block';
+
+  playSound();
 });
 
 visitorsBtn.addEventListener('click', function(e) {
@@ -19,3 +21,8 @@ backBtn.addEventListener('click', function(e) {
   visitorsDiv.style.display = 'none';
   colleaguesDiv.style.display = 'none';
 });
+
+const playSound = () => {
+  var sound = document.getElementById('audio');
+  sound.play();
+};
