@@ -24,16 +24,30 @@
     </div>
 
     <div id="colleagues">
+      <p class="instructions">Please wear this badge at all times whilst in the building.</p>
       <form id="colleaguesForm">
         <input id="input1" type="text" placeholder="First Name" class="inputs" autofocus />
         <input id="input2" type="text" placeholder="Last Name" class="inputs" />
         <input id="input3" type="text" placeholder="Card #" class="inputs" />
 
         <p class="submitBtn">SUBMIT</p>
+
+        <p class="instructions">Please return the badge to the Security at the end of your work day</p>
       </form>
     </div>
 
     <div id="visitors">
+      <p class="instructionsListTitle">Whilst you are here, please observe the following:</p>
+      <p class="smallTitle">Security</p>
+      <p class="instructionsText">You may only enter work areas when escorted by an ASDA colleague.</p>
+      <p class="instructionsText">Please wear this badge at all times whilst in the building.</p>
+      <p class="smallTitle">Fire and Emergencies</p>
+      <p class="instructionsText">
+        In an emergency the fire alarm will sound. Please follow the fire exit signs and the evacuation route followed by ASDA colleagues.
+      </p>
+      <p class="smallTitle">IT</p>
+      <p class="instructionsText">Under no circumstances should non ASDA PCs or laptops be connected to the network.</p>
+
       <form id="visitorsForm">
         <input id="input1Visitors" type="text" placeholder="First Name" class="inputs" autofocus />
         <input id="input2Visitors" type="text" placeholder="Last Name" class="inputs" />
@@ -41,12 +55,75 @@
         <input id="input4Visitors" type="text" placeholder="Visiting" class="inputs" />
 
         <p class="submitBtn">SUBMIT</p>
+
+        <p class="instructions">Please return the pass to Security upon departure</p>
       </form>
     </div>
 
     <div id="colleaguesListDiv">
-      Colleagues
-      <ul id="colleaguesList"></ul>
+      <p class="smallTitle">Colleagues</p>
+      <ul id="colleaguesList">
+
+        <li class="colleaguesListPart head">
+          <p class="names">Date</p>
+          <p class="names">First Name</p>
+          <p class="names">Last Name</p>
+          <p class="names">Card #</p>
+          <p class="names">Status</p>
+          <p class="names" >Note</p>
+          <p class="names last"></p>
+        </li>
+
+        <li class="colleaguesListPart">
+          <p class="names">31/01/2020</p>
+          <p class="names">Bbbbbbb</p>
+          <p class="names">Zzzzzzzzzzz</p>
+          <p class="names">96</p>
+          <p class="names">not returned</p>
+          <input id="listInput" type="text" class="names" placeholder="Note"></input>
+          <p id="deleteBtn" class="names submitBtn">Delete</p>
+        </li>
+
+        <li class="colleaguesListPart">
+          <p class="names">31/01/2020</p>
+          <p class="names">Bbbbbbb</p>
+          <p class="names">Zzzzzzzzzzz</p>
+          <p class="names">96</p>
+          <p class="names">not returned</p>
+          <input id="listInput" type="text" class="names" placeholder="Note"></input>
+          <p id="deleteBtn" class="names submitBtn">Delete</p>
+        </li>
+
+        <li class="colleaguesListPart">
+          <p class="names">31/01/2020</p>
+          <p class="names">Bbbbbbb</p>
+          <p class="names">Zzzzzzzzzzz</p>
+          <p class="names">96</p>
+          <p class="names">not returned</p>
+          <input id="listInput" type="text" class="names" placeholder="Note"></input>
+          <p id="deleteBtn" class="names submitBtn">Delete</p>
+        </li>
+
+        <li class="colleaguesListPart">
+          <p class="names">31/01/2020</p>
+          <p class="names">Bbb</p>
+          <p class="names">Zzzzzzzzzzzggggg</p>
+          <p class="names">96</p>
+          <p class="names">not returned</p>
+          <input id="listInput" type="text" class="names" placeholder="Note"></input>
+          <p id="deleteBtn" class="names submitBtn">Delete</p>
+        </li>
+
+        <li class="colleaguesListPart">
+          <p class="names">31/01/2020</p>
+          <p class="names">Bbb</p>
+          <p class="names">Zzzzzzzzzzzggggg</p>
+          <p class="names">96</p>
+          <p class="names">not returned</p>
+          <input id="listInput" type="text" class="names" placeholder="Note"></input>
+          <p id="deleteBtn" class="names submitBtn">Delete</p>
+        </li>
+      </ul>
     </div>
 
     <div id="visitorsListDiv">
@@ -55,8 +132,15 @@
     </div>
 
     <audio id="audio" src="http://www.soundjay.com/button/beep-07.wav" autoplay="false"></audio>
-    <img id="logo" src="images/WalmartGBStrans.png" />
+
     <img id="backBtn" src="images/arrow.png" />
+
+    <div id="listButtons">
+      <p id="colleaguesListBtn">Colleagues List</p>
+      <p id="visitorsListBtn">Visitors List</p>
+    </div>
+
+    <img id="logo" src="images/WalmartGBStrans.png" />
 
     <script src="./script.js"></script>
   </body>

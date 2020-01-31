@@ -6,6 +6,10 @@ const visitorsBtn = document.querySelector('#visitorsBtn');
 const backBtn = document.querySelector('#backBtn');
 const input = document.querySelector('#input1');
 const inputVisitors = document.querySelector('#input1Visitors');
+const colleaguesListBtn = document.querySelector('#colleaguesListBtn');
+const visitorsListBtn = document.querySelector('#visitorsListBtn');
+const colleaguesListDiv = document.querySelector('#colleaguesListDiv');
+const visitorsListDiv = document.querySelector('#visitorsListDiv');
 
 colleaguesBtn.addEventListener('click', function(e) {
   initialDiv.style.display = 'none';
@@ -23,11 +27,22 @@ visitorsBtn.addEventListener('click', function(e) {
   inputVisitors.focus();
 });
 
+colleaguesListBtn.addEventListener('click', function(e) {
+  initialDiv.style.display = 'none';
+  visitorsDiv.style.display = 'none';
+  colleaguesDiv.style.display = 'none';
+
+  colleaguesListDiv.style.display = 'block';
+  backBtn.style.display = 'block';
+  inputVisitors.focus();
+});
+
 backBtn.addEventListener('click', function(e) {
   initialDiv.style.display = 'block';
   visitorsDiv.style.display = 'none';
   colleaguesDiv.style.display = 'none';
   backBtn.style.display = 'none';
+  colleaguesListDiv.style.display = 'none';
 });
 
 const playSound = () => {

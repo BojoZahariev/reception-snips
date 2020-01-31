@@ -6,7 +6,6 @@
 
 body {
   background-color: #007dc6;
-
   height: 100vh;
   background-image: url(images/Bhblue2.jpg);
   background-size: cover;
@@ -24,14 +23,14 @@ body {
 .title {
   font-size: 60px;
   color: #ffc220;
-  padding-top: 80px;
+  padding-top: 20vh;
   text-align: center;
   font-weight: 700;
   text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
 }
 
 .buttons {
-  margin-top: 30vh;
+  margin-top: 20vh;
   text-align: center;
 }
 
@@ -46,7 +45,7 @@ body {
   overflow: hidden;
   line-height: 200px;
   text-align: center;
-  font-size: 20px;
+  font-size: 22px;
   color: #fff;
   cursor: pointer;
   user-select: none;
@@ -59,7 +58,7 @@ body {
 
 #colleaguesBtn:hover,
 #visitorsBtn:hover {
-  font-size: 22px;
+  font-size: 24px;
 }
 
 #colleaguesBtn:active,
@@ -94,17 +93,34 @@ body {
   left: 0;
 }
 
-.names {
+.instructions {
+  font-size: 40px;
+  color: #ffc220;
+  padding-top: 20vh;
+  text-align: center;
+  font-weight: 700;
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+}
+
+#listButtons {
+  position: absolute;
+  bottom: 0;
+  padding: 10px;
+  width: 100%;
+  text-align: center;
+}
+
+#colleaguesListBtn,
+#visitorsListBtn {
+  color: #76c043;
+  cursor: pointer;
   display: inline;
   padding: 10px;
 }
 
-#colleaguesListDiv {
-  display: none;
-}
-
-#visitorsListDiv {
-  display: none;
+#colleaguesListBtn:hover,
+#visitorsListBtn:hover {
+  color: #45632f;
 }
 
 /*Colleagues Form*/
@@ -130,7 +146,7 @@ body {
 
   width: 250px;
   font-size: 20px;
-  margin: 0px 10px;
+  margin: 10px;
 }
 
 #input3 {
@@ -180,9 +196,78 @@ body {
 #visitors {
   display: none;
 }
+
+.instructionsListTitle {
+  font-size: 30px;
+  color: #ffc220;
+  padding: 10px;
+  text-align: center;
+  font-weight: 700;
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+}
+
+.smallTitle {
+  padding: 10px;
+  font-size: 22px;
+  color: #ffc220;
+  text-align: center;
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+}
+
+.instructionsText {
+  font-size: 20px;
+  color: #222;
+  text-align: center;
+}
+
 #visitorsForm {
   text-align: center;
   width: 100%;
   position: absolute;
   top: 49%;
+}
+
+/*LISTS*/
+
+#colleaguesListDiv {
+  display: none;
+  width: 90%;
+  margin: auto;
+  padding: 10px;
+}
+
+#colleaguesList {
+  background-color: #fcfcfc;
+  color: #222;
+  list-style: none;
+  border: 1px solid #ffc220;
+}
+
+.colleaguesListPart {
+  display: flex;
+  justify-content: center;
+  border-bottom: 1px solid #ffc220;
+}
+
+.head {
+  border-bottom: 1px solid #222;
+  font-size: 22px;
+}
+
+.names {
+  padding: 10px;
+  flex-basis: 20%;
+}
+
+#listInput {
+  text-transform: uppercase;
+}
+
+#deleteBtn,
+.last {
+  flex-basis: 50px;
+}
+
+#visitorsListDiv {
+  display: none;
 }
