@@ -229,14 +229,16 @@ body {
 
 /*LISTS*/
 
-#colleaguesListDiv {
+#colleaguesListDiv,
+#visitorsListDiv {
   display: none;
   width: 90%;
   margin: auto;
   padding: 10px;
 }
 
-#colleaguesList {
+#colleaguesList,
+#visitorsList {
   background-color: #fcfcfc;
   color: #222;
   list-style: none;
@@ -263,11 +265,10 @@ body {
   text-transform: uppercase;
 }
 
-#deleteBtn,
-.last {
-  flex-basis: 50px;
+#deleteBtn {
+  flex-basis: 80px;
 }
 
-#visitorsListDiv {
-  display: none;
+.last {
+  flex-basis: 100px;
 }

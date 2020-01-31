@@ -31,10 +31,20 @@ colleaguesListBtn.addEventListener('click', function(e) {
   initialDiv.style.display = 'none';
   visitorsDiv.style.display = 'none';
   colleaguesDiv.style.display = 'none';
+  visitorsListDiv.style.display = 'none';
 
   colleaguesListDiv.style.display = 'block';
   backBtn.style.display = 'block';
-  inputVisitors.focus();
+});
+
+visitorsListBtn.addEventListener('click', function(e) {
+  initialDiv.style.display = 'none';
+  visitorsDiv.style.display = 'none';
+  colleaguesDiv.style.display = 'none';
+  colleaguesListDiv.style.display = 'none';
+
+  visitorsListDiv.style.display = 'block';
+  backBtn.style.display = 'block';
 });
 
 backBtn.addEventListener('click', function(e) {
@@ -43,6 +53,7 @@ backBtn.addEventListener('click', function(e) {
   colleaguesDiv.style.display = 'none';
   backBtn.style.display = 'none';
   colleaguesListDiv.style.display = 'none';
+  visitorsListDiv.style.display = 'none';
 });
 
 const playSound = () => {
